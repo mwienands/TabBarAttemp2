@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/DistanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance"
+        android:textSize="22dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DistanceTextView"
+        android:layout_centerHorizontal="true"
+
+        android:id="@+id/seekBar" />
+
+    <TextView
+        android:id="@+id/MaxDistanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max"
+        android:textSize="14dp"
+        android:layout_below="@id/seekBar"
+        android:paddingTop="10dp"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/MinDistanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Min"
+        android:textSize="14dp"
+        android:layout_below="@id/seekBar"
+        android:paddingTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/ChangeLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textSize="22dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="40dp"
+        android:layout_below="@id/seekBar"
+        />
+</RelativeLayout>
