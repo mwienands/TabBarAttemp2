@@ -22,7 +22,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements EventFragment.OnListFragmentInteractionListener {
     TableLayout event_Table;
     ArrayList catagories = new ArrayList();
-
+    public static final String MyPREFERENCES = "MyPrefs" ;
 
     @Override
 
@@ -30,11 +30,9 @@ public class MainActivity extends AppCompatActivity implements EventFragment.OnL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        FetchData fd = new FetchData();
+        fd.getData();
 
-
-
-
-            getData();
 
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
@@ -79,31 +77,7 @@ public class MainActivity extends AppCompatActivity implements EventFragment.OnL
 
     }
 
-    private void getData(){
-        //init the connection to the parse server
 
-        Parse.initialize(new Parse.Configuration.Builder(this)
-                .applicationId("DBPoKTgalzSK4aNDQGSx9GDgdCKjwW4ohnj0uNTj")
-                .clientKey("LcCBx9dDkE4rxkqecTadWMMSKtuvAaClqoLhrbSN")
-                .server("https://parseapi.back4app.com/").build()
-        );
-        // que data.
-
-
-        ParseQuery<ParseObject> query = ParseQuery.getQuery("Event");
-        query.findInBackground(new FindCallback<ParseObject>() {
-            public void done(List<ParseObject> objects, ParseException e) {
-                if (e == null) {
-//
-        }else{
-
-                }
-            }
-        });
-
-
-
-    }
 
     @Override
     public void OnListFragmentInteractionListener(EventContent.EventItem dummyContent) {
