@@ -1,4 +1,4 @@
-package com.example.mwienands.tabbarattemp2.dummy;
+package com.example.mwienands.tabbarattemp2.Event;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -14,13 +14,11 @@ import java.util.Map;
 public class EventContent {
 
     /**
-     * An array of sample (dummy) items.
+     * An array of sample (Event) items.
      */
     public static final List<EventItem> ITEMS = new ArrayList<EventItem>();
 
-    /**
-     * A map of sample (dummy) items, by ID.
-     */
+
     public static final Map<String, EventItem> ITEM_MAP = new HashMap<String, EventItem>();
 
     private static final int COUNT = 25;

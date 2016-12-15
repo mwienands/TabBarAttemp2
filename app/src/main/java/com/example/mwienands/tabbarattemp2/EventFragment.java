@@ -10,8 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.mwienands.tabbarattemp2.dummy.EventContent;
-import com.example.mwienands.tabbarattemp2.dummy.EventContent.EventItem;
+import com.example.mwienands.tabbarattemp2.Event.EventContent;
+import com.example.mwienands.tabbarattemp2.Event.EventContent.EventItem;
 
 /**
  * A fragment representing a list of Items.
@@ -67,7 +67,7 @@ public class EventFragment extends Fragment {
             } else {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
-            recyclerView.setAdapter(new MyCatagoryRecyclerViewAdapter(EventContent.ITEMS, mListener));
+            recyclerView.setAdapter(new EventRecyclerViewAdapter(EventContent.ITEMS, mListener));
         }
         return view;
     }

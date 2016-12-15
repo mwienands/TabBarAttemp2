@@ -8,7 +8,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TableLayout;
 
-import com.example.mwienands.tabbarattemp2.dummy.EventContent;
+import com.example.mwienands.tabbarattemp2.Event.EventContent;
 import com.parse.FindCallback;
 import com.parse.Parse;
 import com.parse.ParseException;

@@ -8,10 +8,10 @@ package com.example.mwienands.tabbarattemp2;
         import android.view.View;
         import android.view.ViewGroup;
 
-public class TabFragment3 extends Fragment {
+public class SettingsFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.tab_fragment3, container, false);
+        return inflater.inflate(R.layout.settings_fragment, container, false);
     }
 }
