@@ -1,4 +1,4 @@
-package com.example.mwienands.tabbarattemp2;
+package com.example.mwienands.eventago;
 
 
         import android.os.Bundle;
@@ -16,14 +16,14 @@ public class CalendarFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-       View rootView = inflater.inflate(R.layout.calendar_fragment, container, false);
+       View rootView = inflater.inflate(com.example.mwienands.eventago.R.layout.calendar_fragment, container, false);
         initializeCalendar();
 
 
         return rootView;
     }
     public void initializeCalendar() {
-        calendar = (CalendarView) getActivity().findViewById(R.id.calendar);
+        calendar = (CalendarView) getActivity().findViewById(com.example.mwienands.eventago.R.id.calendar);
 
 //        calendar.setOnClickListener(new View.OnClickListener() {
 //            @Override

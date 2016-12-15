@@ -1,4 +1,4 @@
-package com.example.mwienands.tabbarattemp2;
+package com.example.mwienands.eventago;
 
 import android.app.Application;
 import android.content.Context;
@@ -10,7 +10,6 @@ import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -54,9 +53,8 @@ public class FetchData extends Application {
         ArrayList<String> Descriptions = new ArrayList<>();
         for(int i =0; i<objects.size(); i++){
             events.add(objects.get(i).get("Event").toString());
-            if(!Categories.contains(objects.get(i).get("TypeOfEvent").toString())){
-                Categories.add(objects.get(i).get("TypeOfEvent").toString());
-            }
+
+            Categories.add(objects.get(i).get("TypeOfEvent").toString());
             Descriptions.add(objects.get(i).get("Description").toString());
         }
         SharedPreferences.Editor editor = sharedpreferences.edit();

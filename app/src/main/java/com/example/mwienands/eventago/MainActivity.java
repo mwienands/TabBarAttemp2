@@ -1,4 +1,4 @@
-package com.example.mwienands.tabbarattemp2;
+package com.example.mwienands.eventago;
 
 
 
@@ -8,15 +8,9 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TableLayout;
 
-import com.example.mwienands.tabbarattemp2.Event.EventContent;
-import com.parse.FindCallback;
-import com.parse.Parse;
-import com.parse.ParseException;
-import com.parse.ParseObject;
-import com.parse.ParseQuery;
+import com.example.mwienands.eventago.Event.EventContent;
 
 import java.util.ArrayList;
-import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity implements EventFragment.OnListFragmentInteractionListener {
@@ -28,20 +22,20 @@ public class MainActivity extends AppCompatActivity implements EventFragment.OnL
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(com.example.mwienands.eventago.R.layout.activity_main);
 
         FetchData fd = new FetchData();
 
 
 
 
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
+        TabLayout tabLayout = (TabLayout) findViewById(com.example.mwienands.eventago.R.id.tab_layout);
         tabLayout.addTab(tabLayout.newTab().setText("Events"));
         tabLayout.addTab(tabLayout.newTab().setText("Calendar"));
         tabLayout.addTab(tabLayout.newTab().setText("Settings"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
-        final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
+        final ViewPager viewPager = (ViewPager) findViewById(com.example.mwienands.eventago.R.id.pager);
         final PagerAdapter adapter = new PagerAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(adapter);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));

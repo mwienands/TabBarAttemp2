@@ -1,4 +1,4 @@
-package com.example.mwienands.tabbarattemp2;
+package com.example.mwienands.eventago;
 
 /**
  * Created by mwienands on 12/7/16.

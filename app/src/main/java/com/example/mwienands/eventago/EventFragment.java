@@ -1,7 +1,6 @@
-package com.example.mwienands.tabbarattemp2;
+package com.example.mwienands.eventago;
 
 import android.content.Context;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
@@ -11,16 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.mwienands.tabbarattemp2.Event.EventContent;
-import com.example.mwienands.tabbarattemp2.Event.EventContent.EventItem;
-import com.parse.FindCallback;
-import com.parse.Parse;
-import com.parse.ParseException;
-import com.parse.ParseObject;
-import com.parse.ParseQuery;
-
-import java.net.URL;
-import java.util.List;
+import com.example.mwienands.eventago.Event.EventContent;
+import com.example.mwienands.eventago.Event.EventContent.EventItem;
 
 /**
  * A fragment representing a list of Items.
@@ -65,7 +56,7 @@ public class EventFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_event_list, container, false);
+        View view = inflater.inflate(com.example.mwienands.eventago.R.layout.fragment_event_list, container, false);
 
         // Set the adapter
         if (view instanceof RecyclerView) {

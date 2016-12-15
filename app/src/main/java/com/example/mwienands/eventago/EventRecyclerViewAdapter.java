@@ -1,4 +1,4 @@
-package com.example.mwienands.tabbarattemp2;
+package com.example.mwienands.eventago;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-import com.example.mwienands.tabbarattemp2.Event.EventContent.EventItem;
+import com.example.mwienands.eventago.Event.EventContent.EventItem;
 
 import java.util.List;
 
@@ -29,7 +29,7 @@ public class EventRecyclerViewAdapter extends RecyclerView.Adapter<EventRecycler
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.fragment_event, parent, false);
+                .inflate(com.example.mwienands.eventago.R.layout.fragment_event, parent, false);
         return new ViewHolder(view);
     }
 
@@ -66,8 +66,8 @@ public class EventRecyclerViewAdapter extends RecyclerView.Adapter<EventRecycler
         public ViewHolder(View view) {
             super(view);
             mView = view;
-            mIdView = (TextView) view.findViewById(R.id.id);
-            mContentView = (TextView) view.findViewById(R.id.content);
+            mIdView = (TextView) view.findViewById(com.example.mwienands.eventago.R.id.id);
+            mContentView = (TextView) view.findViewById(com.example.mwienands.eventago.R.id.content);
         }
 
         @Override

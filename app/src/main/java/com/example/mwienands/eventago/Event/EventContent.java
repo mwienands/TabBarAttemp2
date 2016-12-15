@@ -1,4 +1,4 @@
-package com.example.mwienands.tabbarattemp2.Event;
+package com.example.mwienands.eventago.Event;
 
 import java.util.ArrayList;
 import java.util.HashMap;
