@@ -19,8 +19,15 @@ import java.util.Set;
  * Created by mwienands on 12/14/16.
  */
 
-public class FetchData extends Application {
-    public void getData() {
+public class parseApp extends Application {
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        initConnection();
+        getData();
+    }
+    public void initConnection(){
         //init the connection to the parse server
 
         Parse.initialize(new Parse.Configuration.Builder(this)
@@ -28,6 +35,9 @@ public class FetchData extends Application {
                 .clientKey("LcCBx9dDkE4rxkqecTadWMMSKtuvAaClqoLhrbSN")
                 .server("https://parseapi.back4app.com/").build()
         );
+    }
+    public void getData() {
+
         // que data.
 
 
@@ -43,7 +53,7 @@ public class FetchData extends Application {
         });
     }
 
-    public FetchData() {
+    public parseApp() {
     }
 
     public void processData(List<ParseObject> objects){
@@ -52,7 +62,7 @@ public class FetchData extends Application {
         ArrayList<String> Categories = new ArrayList<>();
         ArrayList<String> Descriptions = new ArrayList<>();
         for(int i =0; i<objects.size(); i++){
-            events.add(objects.get(i).get("Event").toString());
+            events.add(objects.get(i).get("EventName").toString());
 
             Categories.add(objects.get(i).get("TypeOfEvent").toString());
             Descriptions.add(objects.get(i).get("Description").toString());

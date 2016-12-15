@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements EventFragment.OnL
         super.onCreate(savedInstanceState);
         setContentView(com.example.mwienands.eventago.R.layout.activity_main);
 
-        FetchData fd = new FetchData();
+
 
 
 
