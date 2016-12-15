@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity implements EventFragment.OnL
         query.findInBackground(new FindCallback<ParseObject>() {
             public void done(List<ParseObject> objects, ParseException e) {
                 if (e == null) {
-//                     processData(objects);
+//
         }else{
 
                 }
