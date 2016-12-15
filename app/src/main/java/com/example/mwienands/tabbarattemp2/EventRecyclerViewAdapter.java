@@ -29,7 +29,7 @@ public class EventRecyclerViewAdapter extends RecyclerView.Adapter<EventRecycler
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.fragment_catagory, parent, false);
+                .inflate(R.layout.fragment_event, parent, false);
         return new ViewHolder(view);
     }
 
