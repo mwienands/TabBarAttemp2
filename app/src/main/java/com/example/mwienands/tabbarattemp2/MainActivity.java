@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements EventFragment.OnL
         setContentView(R.layout.activity_main);
 
         FetchData fd = new FetchData();
-        fd.getData();
+
 
 
 
